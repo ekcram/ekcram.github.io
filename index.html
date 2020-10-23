@@ -2,14 +2,19 @@
 <html class="no-js" lang="en">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-179383079-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-179383079-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'UA-179383079-1');
-</script>
+      gtag("config", "UA-179383079-1");
+    </script>
 
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -79,12 +84,11 @@
           <div class="col-md-8">
             <p>
               Hello there! I'm Marco and this is my personal website. Currently
-              I'm studying to become a Web Developer. This might sound very
-              typical, yet it's true! Since I was little, my passion has been
-              computers, but also languages. That's why I decided to study both
-              things. However, web develpoment and programming is the main thing
-              I want to enjoy working at and, of course, become on a good
-              professional.
+              I'm studying to become a Web Developer. Since I was little, my
+              passion has been computers, but also languages. That's why I
+              decided to study both things. However, web develpoment and
+              programming is the main thing I want to enjoy working at and, of
+              course, become on a good professional.
             </p>
           </div>
         </div>
@@ -94,6 +98,16 @@
 
     <div id="education">
       <h2 class="heading">Education</h2>
+      <div class="education-block">
+        <h3>IES Trassierra (Córdoba)</h3>
+        <span class="education-date">Sept 2019 - </span>
+        <h4>Higher Degree in Web Application Development</h4>
+        <ul>
+          Studing second year of Web Aplication Development degree.
+        </ul>
+      </div>
+      <!-- End .education-block -->
+
       <div class="education-block">
         <h3>University of Sevilla</h3>
         <span class="education-date">Sept 2015 - June 2019</span>
@@ -109,16 +123,6 @@
         </p>
       </div>
       <!-- End .education-block -->
-
-      <div class="education-block">
-        <h3>IES Trassierra (Córdoba)</h3>
-        <span class="education-date">Sept 2019 - </span>
-        <h4>Higher Degree in Web Application Development</h4>
-        <ul>
-          Studing second year of Web Aplication Development degree.
-        </ul>
-      </div>
-      <!-- End .education-block -->
     </div>
     <!-- End #education -->
 
@@ -126,13 +130,18 @@
       <h2 class="heading">Skills</h2>
       <ul>
         <li>Java</li>
+        <li>PHP</li>
         <li>SQL</li>
+        <li>Oracle</li>
         <li>XQuery</li>
         <li>XSL</li>
         <li>PL/SQL</li>
         <li>HTML</li>
         <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Angular</li>
         <li>Git</li>
+        <li>Scrum</li>
       </ul>
       <br /><br />
       <h2 class="heading">Languages</h2>
@@ -147,23 +156,9 @@
     <div id="contact">
       <h2>Get in Touch</h2>
       <div id="contact-form">
-        <form method="POST" action="https://formspree.io/email@email.com">
-          <input
-            type="hidden"
-            name="_subject"
-            value="Contact request from personal website"
-          />
-          <input
-            type="email"
-            name="_replyto"
-            placeholder="Your email"
-            required
-          />
-          <textarea
-            name="message"
-            placeholder="Your message"
-            required
-          ></textarea>
+        <form method="POST" action="process.php">
+          <input type="email" name="email" placeholder="Your email" required/>
+          <textarea name="message" placeholder="Your message" required></textarea>
           <button type="submit">Send</button>
         </form>
       </div>
@@ -197,7 +192,7 @@
                 ></a>
               </li>
               <li>
-                <a href="https://twitter.com/mrckeu03" target="_blank"
+                <a href="https://twitter.com/ekcramdev" target="_blank"
                   ><i class="fa fa-twitter" aria-hidden="true"></i
                 ></a>
               </li>
