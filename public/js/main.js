@@ -1,6 +1,5 @@
 "use strict";
 
-// require('dotenv').config();
 
 /*==================== FORM VALIDATION =============================== */
 $(() => {
@@ -65,7 +64,7 @@ let confFormValidation = () => {
         },
         submitHandler: () => { //el botón submit va a realizar este evento automáticamente
             if ($(":submit").text() == "Send Message") {
-              
+
                 $(".contact__input").val(""); //limpiar las cajas de texto
                 $(".contact__input").removeClass("is-valid").removeClass("is-invalid");
             } else {
@@ -281,43 +280,43 @@ themeButton.addEventListener('click', () => {
 
 /*==================== SEND EMAIL WITH NODEMAILER ===================*/
 const contactForm = document.getElementById('form__contact');
-let nombre = document.getElementById('name');
+let name = document.getElementById('name');
 let email = document.getElementById('email');
-let project = document.getElementById('project');
-let mensaje = document.getElementById('mensaje');
+let subject = document.getElementById('subject');
+let message = document.getElementById('message');
 
-contactForm.addEventListener('submit', (e)=>{
+contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
     let formData = {
-        name: nombre.value,
+        name: name.value,
         email: email.value,
-        project: project.value,
-        mensaje: mensaje.value
+        subject: subject.value,
+        message: message.value
     }
-   
+
     let xhr = new XMLHttpRequest();
-    xhr.open('POST','/');
-    xhr.setRequestHeader('content-type', 'application/json');
-    xhr.onload = function(){
+    xhr.open('POST', '/',true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.onload = function () {
         console.log(xhr.responseText);
-        if(xhr.responseText == 'success'){
-           swalAlert('success', "¡Email enviado! Email sent!", "");
-            nombre.value = '';
+        if (xhr.responseText == 'success') {
+            swalAlert('success', "¡Email enviado! Email sent!", "");
+            name.value = '';
             email.value = '';
-            project.value = '';
-            mensaje.value = '';
+            subject.value = '';
+            message.value = '';
         } else {
             swalAlert('error', "Ha ocurrido un error. An error has occurred", "Intenta contactar conmigo a través de mi perfil de LinkedIn. Please, try to contact me on my LinkedIn profile.");
-            nombre.value = '';
+            name.value = '';
             email.value = '';
-            project.value = '';
-            mensaje.value = '';
+            subject.value = '';
+            message.value = '';
         }
     }
 
     xhr.send(JSON.stringify(formData));
-    
+
 })
 
 
