@@ -423,28 +423,6 @@ img {
   text-align: center;
   margin-bottom: var(--mb-2-5);
 }
-/* 
-.about__info {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: var(--mb-2-5);
-}
-
-.about__info-title {
-  font-size: var(--h2-font-size);
-  font-weight: var(--font-semi-bold);
-  color: var(--title-color);
-}
-
-.about__info-name {
-  font-size: var(--small-font-size);
-}
-
-.about__info-title,
-.about__info-name {
-  display: block;
-  text-align: center;
-} */
 
 .about__buttons {
   display: flex;
@@ -632,6 +610,10 @@ img {
   transform: translate(6px, -7px);
 }
 
+.qualification__languages span {
+  margin-left: 6rem;
+}
+
 .qualification [data-content] {
   display: none;
 }
@@ -803,13 +785,12 @@ img {
   outline: none;
 }
 
-
 /*==================== CONTACT ME ====================*/
 .contact__container {
   row-gap: 3rem;
 }
 
-.contact__data{
+.contact__data {
   margin-left: auto;
   margin-right: auto;
   width: 220px;
@@ -964,7 +945,7 @@ img {
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
-@media screen and (max-width: 350px) {
+@media screen and (min-width: 350px) {
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
@@ -992,6 +973,10 @@ img {
 
   .qualification__data {
     gap: 0.5rem;
+  }
+
+  .qualification__languages span {
+    margin-left: 8.5rem;
   }
 
   .services__container {
@@ -1030,7 +1015,6 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 
-
   .skills__container {
     grid-template-columns: max-content;
     justify-content: center;
@@ -1040,6 +1024,10 @@ img {
     display: grid;
     grid-template-columns: 0.6fr;
     justify-content: center;
+  }
+
+  .qualification__languages span {
+    margin-left: 6rem;
   }
 
   @media screen and (min-width: 768px) {
@@ -1127,10 +1115,6 @@ img {
       text-align: initial;
     }
 
-    /* .about__info {
-      justify-content: space-between;
-    } */
-
     .about__buttons {
       justify-content: initial;
     }
@@ -1150,6 +1134,10 @@ img {
 
     .qualification__sections {
       grid-template-columns: 0.5fr;
+    }
+
+    .qualification__languages span {
+      margin-left: 9rem;
     }
 
     .services__container {
