@@ -803,74 +803,7 @@ img {
   outline: none;
 }
 
-/*==================== PROJECT IN MIND ====================*/
-.project {
-  text-align: center;
-}
 
-.project__bg {
-  background-color: var(--first-color-second);
-  padding-top: 3rem;
-}
-
-.project__title {
-  font-size: var(--h2-font-size);
-  margin-bottom: var(--mb-0-75);
-}
-
-.project__description {
-  margin-bottom: var(--mb-1-5);
-}
-
-.project__title,
-.project__description {
-  color: #fff;
-}
-
-.project__img {
-  width: 232px;
-  justify-self: center;
-}
-
-/*==================== TESTIMONIAL ====================*/
-/* .testimonial__data,
-.testimonial__header {
-  display: flex;
-}
-
-.testimonial__data {
-  justify-content: space-between;
-  margin-bottom: var(--mb-1);
-}
-
-.testimonial__img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  margin-right: var(--mb-0-75);
-}
-
-.testimonial__name {
-  font-size: var(--h3-font-size);
-  font-weight: var(--font-medium);
-}
-
-.testimonial__client {
-  font-size: var(--small-font-size);
-  color: var(--text-color-light);
-}
-
-.testimonial__description {
-  margin-bottom: var(--mb-2-5);
-}
-
-.testimonial__icon-star {
-  color: var(--first-color);
-}
-
-.swiper-container .swiper-pagination-testimonial {
-  bottom: 0;
-} */
 /*==================== CONTACT ME ====================*/
 .contact__container {
   row-gap: 3rem;
@@ -1067,26 +1000,6 @@ img {
   .services__modal {
     padding: 0 0.5rem;
   }
-
-  .project__img {
-    width: 200px;
-  }
-
-  .testimonial__data,
-  .testimonial__header {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .testimonial__img {
-    margin-right: 0;
-    margin-bottom: var(--mb-0-25);
-  }
-
-  .testimonial__data,
-  .testimonial__description {
-    text-align: center;
-  }
 }
 
 /* For medium devices */
@@ -1111,10 +1024,6 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .project__container {
-    grid-template-columns: 1fr;
-    justify-content: center;
-  }
 
   .skills__container {
     grid-template-columns: max-content;
@@ -1260,27 +1169,6 @@ img {
 
     .portfolio__content {
       align-items: center;
-    }
-
-    .project {
-      text-align: initial;
-    }
-
-    .project__bg {
-      background: none;
-    }
-
-    .project__container {
-      background-color: var(--first-color-second);
-      border-radius: 1rem;
-      padding: 3rem 2.5rem 3rem 3rem;
-      grid-template-columns: 1fr;
-      column-gap: 3rem;
-      text-align: center;
-    }
-
-    .project__data {
-      padding-top: 0.8rem;
     }
 
     .footer__container {
