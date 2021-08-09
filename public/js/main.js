@@ -2,77 +2,77 @@
 
 
 /*==================== FORM VALIDATION =============================== */
-$(() => {
+// $(() => {
 
-    $("#enviar").on("click", confFormValidation);
-});
+//     $("#enviar").on("click", confFormValidation);
+// });
 
-let confFormValidation = () => {
-    //establecer nueva regla. Establecemos el nombre del nuevo atributo y lo que va a hacer.
-    $.validator.addMethod("regExpEmail", function (value, element, expresion) {
-        let reg = new RegExp(expresion);
-        return this.optional(element) || reg.test(value)
-    })
-    $(".contact__form").validate({
-        //aspecto de los mensajes
-        errorElement: "em", //es una clase propia de la librería
-        errorPlacement: function (error, element) {
-            error.addClass("invalid-feedback");
-            error.insertAfter(element);
-        },
-        //establecer borde al objeto del error
-        highlight: function (element) {
-            $(element).addClass("is-invalid").removeClass("is-valid")
-        },
-        unhighlight: function (element) { //validación correcta
-            $(element).addClass("is-valid").removeClass("is-invalid")
-        },
-        rules: {
-            //especificamos los objetos a través del atributo name. Siempre se hace así, a través del name.
-            name: {
-                required: true,
-                minlength: 4,
-                maxlength: 50
-            },
-            email: {
-                required: true,
-                regExpEmail: /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/,
-            },
-            project: {
-                required: true,
-                minlength: 3,
-                maxlength: 200
-            },
-            mensaje: {
-                required: true
-            }
-        },
-        messages: {
-            name: {
-                required: "Este campo es obligatorio. This field is required.",
-            },
-            email: {
-                required: "Este campo es obligatorio. This field is required.",
-                regExpNom: "El formato del correo electrónico no es correcto. The format is not correct."
-            },
-            project: {
-                required: "Este campo es obligatorio. This field is required."
-            },
-            mensaje: {
-                required: "Este campo es obligatorio. This field is required."
-            }
-        },
-        submitHandler: () => { //el botón submit va a realizar este evento automáticamente
-            if ($(":submit").text() == "Send Message") {
+// let confFormValidation = () => {
+//     //establecer nueva regla. Establecemos el nombre del nuevo atributo y lo que va a hacer.
+//     $.validator.addMethod("regExpEmail", function (value, element, expresion) {
+//         let reg = new RegExp(expresion);
+//         return this.optional(element) || reg.test(value)
+//     })
+//     $(".contact__form").validate({
+//         //aspecto de los mensajes
+//         errorElement: "em", //es una clase propia de la librería
+//         errorPlacement: function (error, element) {
+//             error.addClass("invalid-feedback");
+//             error.insertAfter(element);
+//         },
+//         //establecer borde al objeto del error
+//         highlight: function (element) {
+//             $(element).addClass("is-invalid").removeClass("is-valid")
+//         },
+//         unhighlight: function (element) { //validación correcta
+//             $(element).addClass("is-valid").removeClass("is-invalid")
+//         },
+//         rules: {
+//             //especificamos los objetos a través del atributo name. Siempre se hace así, a través del name.
+//             name: {
+//                 required: true,
+//                 minlength: 4,
+//                 maxlength: 50
+//             },
+//             email: {
+//                 required: true,
+//                 regExpEmail: /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/,
+//             },
+//             project: {
+//                 required: true,
+//                 minlength: 3,
+//                 maxlength: 200
+//             },
+//             mensaje: {
+//                 required: true
+//             }
+//         },
+//         messages: {
+//             name: {
+//                 required: "Este campo es obligatorio. This field is required.",
+//             },
+//             email: {
+//                 required: "Este campo es obligatorio. This field is required.",
+//                 regExpNom: "El formato del correo electrónico no es correcto. The format is not correct."
+//             },
+//             project: {
+//                 required: "Este campo es obligatorio. This field is required."
+//             },
+//             mensaje: {
+//                 required: "Este campo es obligatorio. This field is required."
+//             }
+//         },
+//         submitHandler: () => { //el botón submit va a realizar este evento automáticamente
+//             if ($(":submit").text() == "Send Message") {
 
-                $(".contact__input").val(""); //limpiar las cajas de texto
-                $(".contact__input").removeClass("is-valid").removeClass("is-invalid");
-            } else {
-                swalAlert("Error", "Ha ocurrido un error. An error has occurred.", "");
-            }
-        }
-    })
-};
+//                 $(".contact__input").val(""); //limpiar las cajas de texto
+//                 $(".contact__input").removeClass("is-valid").removeClass("is-invalid");
+//             } else {
+//                 swalAlert("Error", "Ha ocurrido un error. An error has occurred.", "");
+//             }
+//         }
+//     })
+// };
 
 
 /*==================== MENU SHOW Y HIDDEN ====================*/
@@ -279,45 +279,45 @@ themeButton.addEventListener('click', () => {
 
 
 /*==================== SEND EMAIL WITH NODEMAILER ===================*/
-const contactForm = document.getElementById('form__contact');
-let name = document.getElementById('name');
-let email = document.getElementById('email');
-let subject = document.getElementById('subject');
-let message = document.getElementById('message');
+// const contactForm = document.getElementById('form__contact');
+// let name = document.getElementById('name');
+// let email = document.getElementById('email');
+// let subject = document.getElementById('subject');
+// let message = document.getElementById('message');
 
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
+// contactForm.addEventListener('submit', (e) => {
+//     e.preventDefault();
 
-    let formData = {
-        name: name.value,
-        email: email.value,
-        subject: subject.value,
-        message: message.value
-    }
+//     let formData = {
+//         name: name.value,
+//         email: email.value,
+//         subject: subject.value,
+//         message: message.value
+//     }
 
-    let xhr = new XMLHttpRequest();
-    xhr.open('POST', '/',true);
-    xhr.setRequestHeader('Content-Type', 'application/json');
-    xhr.onload = function () {
-        console.log(xhr.responseText);
-        if (xhr.responseText == 'success') {
-            swalAlert('success', "¡Email enviado! Email sent!", "");
-            name.value = '';
-            email.value = '';
-            subject.value = '';
-            message.value = '';
-        } else {
-            swalAlert('error', "Ha ocurrido un error. An error has occurred", "Intenta contactar conmigo a través de mi perfil de LinkedIn. Please, try to contact me on my LinkedIn profile.");
-            name.value = '';
-            email.value = '';
-            subject.value = '';
-            message.value = '';
-        }
-    }
+//     let xhr = new XMLHttpRequest();
+//     xhr.open('POST', '/',true);
+//     xhr.setRequestHeader('Content-Type', 'application/json');
+//     xhr.onload = function () {
+//         console.log(xhr.responseText);
+//         if (xhr.responseText == 'success') {
+//             swalAlert('success', "¡Email enviado! Email sent!", "");
+//             name.value = '';
+//             email.value = '';
+//             subject.value = '';
+//             message.value = '';
+//         } else {
+//             swalAlert('error', "Ha ocurrido un error. An error has occurred", "Intenta contactar conmigo a través de mi perfil de LinkedIn. Please, try to contact me on my LinkedIn profile.");
+//             name.value = '';
+//             email.value = '';
+//             subject.value = '';
+//             message.value = '';
+//         }
+//     }
 
-    xhr.send(JSON.stringify(formData));
+//     xhr.send(JSON.stringify(formData));
 
-})
+// })
 
 
 /*==================== SWEET ALERT NOTIFICACIONS  ====================*/
