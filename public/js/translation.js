@@ -163,7 +163,8 @@ langList.forEach(lang => {
 });
 
 select.addEventListener('change', (event) => {
-    let urlSelect = `/public/i18n/${event.target.value}.json`;
+    // let urlSelect = `/public/i18n/${event.target.value}.json`; //local
+    let urlSelect = `i18n/${event.target.value}.json`; //server
     let storedDataSelect = fetch(urlSelect)
         .then((response) => {
             return response.json()
