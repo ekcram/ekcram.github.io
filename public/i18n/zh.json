@@ -1,0 +1,101 @@
+{
+    "header": {
+        "navHome": " 开始",
+        "navAbout": "关于我",
+        "navSkills": " 技能",
+        "navServices": " 服务",
+        "navPortfolio": " 文件夹",
+        "navContact": " 联系"
+    },
+    "homeSec": {
+        "homeTitle": "你好，我是马克。",
+        "homeSubtitle": "网发展",
+        "homeDescription": "初级水平的网页设计和开发知识经验，努力工作的，总是想学习新事物。",
+        "contactButton": " 联系我",
+        "scrollButton": " 向下滚动"
+    },
+    "aboutMeSec": {
+        "secTitle": "关于我",
+        "secSubtitle": "我的介绍",
+        "description": "您好！我的名字是 Marco，这是我的个人网站。目前我正在学习成为一名网络开发人员。我从小就对计算机和语言充满热情。这就是为什么我决定研究这两件事。但是，网络开发和编程是我想要享受的主要工作，当然，成为一名优秀的专业人士。",
+        "downloadButton": "下载简历"
+    },
+    "skillsSec": {
+        "secTitle": "技能",
+        "secSubtitle": "我使用的技术",
+        "skills1": "前端开发",
+        "skills2": "后端开发",
+        "skills3": "其它的技巧"
+    },
+    "qualfctionSec": {
+        "secTitle": "学术训练",
+        "secSubtitle": "我的职业道路",
+        "education": "教育",
+        "qualification1": {
+            "qualTitle": "东亚研究学位",
+            "qualSubtitle": "塞维利亚 - 大学"
+        },
+        "qualification2": {
+            "qualTitle": "网络应用程序开发的更高学位",
+            "qualSubtitle": "科尔多瓦 - 学院"
+        },
+        "qualification3": {
+            "qualTitle": "Sngular的Angular Bootcamp",
+            "qualSubtitle": "科尔多瓦 - 在线"
+        },
+        "languages": " 语言",
+        "langs": {
+            "language1": "西班牙语",
+            "langSubtitle1": "母语",
+            "language2": "英语",
+            "language3": "中文",
+            "language4": "日本语"
+        }
+    },
+    "servicesSec": {
+        "secTitle": "服务",
+        "secSubtitle": "我提供的",
+        "frontend": "前端 <br/>开发 ",
+        "backend": "后端 <br/>开发",
+        "viewmore": "查看更多。",
+        "frontTitleModal": "前端 <br/>开发 ",
+        "backTitleModal": "后端 <br/>开发",
+        "modalSeo": {
+            "li1": "我对您的网站进行审核。",
+            "li2": "我分析你的竞争对手。",
+            "li3": "我优化了您网站的性能。",
+            "li4": "我定位你的网站。"
+        },
+        "modalFrontend": {
+            "li1": "我开发用户界面。",
+            "li2": "我设计交互式组件。"
+        },
+        "modalBackend": {
+            "li1": "我开发后端服务。",
+            "li2": "我执行操作和与数据库的连接。."
+        }
+    },
+    "portfolioSec": {
+        "secTitle": "文件夹",
+        "secSubtitle": "最近的项目。",
+        "project1": {
+            "title": "骰子游戏网络应用程序",
+            "description": "使用 PHP 构建的带有会话和数据库连接的网站。适用于所有设备。"
+        },
+        "project2": {
+            "title": "电影广告牌网络应用程序",
+            "description": "使用 Laravel 构建的 CRUD 网站，使用 Laravel Breeze 进行身份验证和数据库连接。适用于所有设备。"
+        },
+        "project3": {
+            "title": "无线电在线网络应用程序",
+            "description": "使用 Angular 创建的 Web 应用程序，因此您可以收听您喜爱的广播电台。链接到 Firebase。适用于所有设备。"
+        }
+    },
+    "contactSec": {
+        "secTitle": "联络我",
+        "secSubtitle": "保持联系",
+        "locationh3": "地点",
+        "locationSpan": "科尔多瓦 - 西班牙",
+        "footerSubtitle": "网络发展"
+    }
+}

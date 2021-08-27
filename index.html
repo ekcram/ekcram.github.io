@@ -13,7 +13,7 @@
 
     <!--==================== UNICONS ====================-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    
+
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="public/css/styles.css">
 
@@ -30,8 +30,7 @@
                 <ul class="nav__list grid">
                     <li class="nav__item">
                         <a href="#home" class="nav__link active-link">
-                            <i class="uil uil-estate nav__icon"></i> Home
-                        </a>
+                            <i class="uil uil-estate nav__icon"></i> Home</a>
                     </li>
                     <li class="nav__item">
                         <a href="#about" class="nav__link">
@@ -62,14 +61,23 @@
                 <i class="uil uil-times nav__close" id="nav-close"></i>
             </div>
 
+
+
             <div class="nav__btns">
+
                 <!-- Theme change button -->
                 <i class="uil uil-moon change-theme" id="theme-button"></i>
-
 
                 <div class="nav__toggle" id="nav-toggle">
                     <i class="uil uil-apps"></i>
                 </div>
+
+                <div>
+                    <select class="lang__content" id="selectLang">
+                    </select>
+                    </form>
+                </div>
+
             </div>
         </nav>
     </header>
@@ -116,14 +124,13 @@
                         <h3 class="home__subtitle">Web developer</h3>
                         <p class="home__description">Junior level experience in web design and development kwoledge,
                             hard working and always wanting lo learn new things.</p>
-                        <a href="#contact" class="button button--flex"> Contact Me
-                            <i class="uil uil-message button__icon"></i>
-                        </a>
+                        <a href="#contact" id="contactButton" class="button button--flex"> Contact Me <i
+                                class="uil uil-message button__icon"></i></a>
                     </div>
                 </div>
 
                 <div class="home__scroll">
-                    <a href="#about" class="home__scroll-button button--flex">
+                    <a href="#about" id="scrollspan" class="home__scroll-button button--flex">
                         <i class="uil uil-mouse-alt home__scroll-mouse"></i>
                         <span class="home__scroll-name">Scroll down</span>
                         <i class="uil uil-arrow-down homw_scroll-arrow"></i>
@@ -158,17 +165,17 @@
         <!--==================== SKILLS ====================-->
         <section class="skills section" id="skills">
             <h2 class="section__title">Skills</h2>
-            <span class="section__subtitle">My technical level</span>
+            <span class="section__subtitle">Technologies I use</span>
             <div class="skills__container container grid">
                 <div>
                     <!--==================== SKILLS 1 ====================-->
-                    <div class="skills__content skills__open">
+                    <div class="skills__content skills__open" id="skills1">
                         <div class="skills__header">
                             <i class="uil uil-brackets-curly skills__icon"></i>
 
                             <div>
                                 <h1 class="skills__titles">Frontend developer</h1>
-                                <span class="skills__subtitle">About 6 months</span>
+                                <!-- <span class="skills__subtitle">About 6 months</span> -->
                             </div>
 
                             <i class="uil uil-angle-down skills__arrow"></i>
@@ -206,13 +213,13 @@
                     </div>
 
                     <!--==================== SKILLS 2====================-->
-                    <div class="skills__content skills__close">
+                    <div class="skills__content skills__close" id="skills2">
                         <div class="skills__header">
                             <i class="uil uil-server-alt skills__icon"></i>
 
                             <div>
                                 <h1 class="skills__titles">Backend developer</h1>
-                                <span class="skills__subtitle">About 6 months</span>
+                                <!-- <span class="skills__subtitle">About 6 months</span> -->
                             </div>
 
                             <i class="uil uil-angle-down skills__arrow"></i>
@@ -255,7 +262,7 @@
                     </div>
 
                     <!--==================== SKILLS 3====================-->
-                    <div class="skills__content skills__close">
+                    <div class="skills__content skills__close" id="skills3">
                         <div class="skills__header">
                             <i class="uil uil-github skills__icon"></i>
 
@@ -288,7 +295,6 @@
                                     <h3 class="skills__name">GIMP</h3>
                                     <i class="fas fa-palette skills__icon"></i>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -298,8 +304,8 @@
 
         <!--==================== QUALIFICATION ====================-->
         <section class="qualification section">
-            <h2 class="section__title">Qualification</h2>
-            <span class="section__subtitle">My personal journey</span>
+            <h2 class="section__title qualh2">Qualification</h2>
+            <span class="section__subtitle qualspan">My personal journey</span>
 
             <div class="qualification__container container">
                 <div class="qualification__tabs">
@@ -319,7 +325,7 @@
 
                         <!--==================== QUALIFICATION 1 ====================-->
                         <div class="qualification__data">
-                            <div>
+                            <div id="qualification1">
                                 <h3 class="qualification__title">Degree in East Asian Studies</h3>
                                 <span class="qualification__subtitle">Seville - University</span>
                                 <div class="qualification__calendar">
@@ -342,7 +348,7 @@
                                 <span class="qualification__rounder"></span>
                                 <span class="qualification__line"></span>
                             </div>
-                            <div>
+                            <div id="qualification2">
                                 <h3 class="qualification__title">Higher Degree in Web Application Development</h3>
                                 <span class="qualification__subtitle">Córdoba - Institute</span>
                                 <div class="qualification__calendar">
@@ -355,7 +361,7 @@
 
                         <!--==================== QUALIFICATION 3 ====================-->
                         <div class="qualification__data">
-                            <div>
+                            <div id="qualification3">
                                 <h3 class="qualification__title">Bootcamp Angular by Sngular</h3>
                                 <span class="qualification__subtitle">Córdoba - Online</span>
                                 <div class="qualification__calendar">
@@ -380,7 +386,7 @@
                                 <span class="qualification__rounder"></span>
                                 <span class="qualification__line"></span>
                             </div>
-                            <div>
+                            <div id="language1">
                                 <h3 class="qualification__title">Spanish</h3>
                                 <span class="qualification__subtitle">Native</span>
                             </div>
@@ -392,7 +398,7 @@
                                 <span class="qualification__rounder"></span>
                                 <span class="qualification__line"></span>
                             </div>
-                            <div>
+                            <div id="language2">
                                 <h3 class="qualification__title">English</h3>
                                 <span class="qualification__subtitle">B2</span>
                             </div>
@@ -404,7 +410,7 @@
                                 <span class="qualification__rounder"></span>
                                 <span class="qualification__line"></span>
                             </div>
-                            <div>
+                            <div id="language3">
                                 <h3 class="qualification__title">Chinese</h3>
                                 <span class="qualification__subtitle">B1</span>
                             </div>
@@ -415,7 +421,7 @@
                             <div class="qualification__languages">
                                 <span class="qualification__rounder"></span>
                             </div>
-                            <div>
+                            <div id="language4">
                                 <h3 class="qualification__title">Japanese</h3>
                                 <span class="qualification__subtitle">A1</span>
                             </div>
@@ -443,7 +449,7 @@
                     </span>
 
                     <div class="services__modal">
-                        <div class="services__modal-content">
+                        <div class="services__modal-content" id="modalSeo">
                             <h4 class="services__modal-title">SEO</h4>
                             <i class="uil uil-times services__modal-close"></i>
 
@@ -473,7 +479,7 @@
                 <div class="services__content">
                     <div>
                         <i class="uil uil-arrow services__icon"></i>
-                        <h3 class="services__title">Frontend <br> Developer</h3>
+                        <h3 class="services__title" id="frontTitle">Frontend <br> Developer</h3>
                     </div>
 
                     <span class="button button--flex button--small button--link services__button">View more
@@ -481,7 +487,7 @@
                     </span>
 
                     <div class="services__modal">
-                        <div class="services__modal-content">
+                        <div class="services__modal-content" id="modalFrontend">
                             <h4 class="services__modal-title">Frontend<br> Developer</h4>
                             <i class="uil uil-times services__modal-close"></i>
 
@@ -502,7 +508,7 @@
                 <div class="services__content">
                     <div>
                         <i class="uil uil-database services__icon"></i>
-                        <h3 class="services__title">Backend <br> Developer</h3>
+                        <h3 class="services__title" id="backTitle">Backend <br> Developer</h3>
                     </div>
 
                     <span class="button button--flex button--small button--link services__button">View more
@@ -510,7 +516,7 @@
                     </span>
 
                     <div class="services__modal">
-                        <div class="services__modal-content">
+                        <div class="services__modal-content" id="modalBackend">
                             <h4 class="services__modal-title">Backend<br> Developer</h4>
                             <i class="uil uil-times services__modal-close"></i>
 
@@ -533,7 +539,7 @@
         <!--==================== PORTFOLIO ====================-->
         <section class="portfolio section" id="portfolio">
             <h2 class="section__title">Portfolio</h2>
-            <span class="section__subtitle">Most recent work</span>
+            <span class="section__subtitle">Most recent projects</span>
 
             <div class="portfolio__container container swiper-container">
                 <div class="swiper-wrapper">
@@ -541,9 +547,10 @@
                     <div class="portfolio__content grid swiper-slide">
                         <img src="public/img/portfolio1.jpg" alt="portfolio1" class="portfolio__img">
 
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Dices game Website</h3>
-                            <p class="portfolio__description">Website built in PHP with sessions and database connection.
+                        <div class="portfolio__data" id="project1">
+                            <h3 class="portfolio__title">Dice Game Web App</h3>
+                            <p class="portfolio__description">Website built with PHP with sessions and database
+                                connection.
                                 Adaptable to all devices.</p>
                             <a href="https://demo-get-number.000webhostapp.com" target="_blank"
                                 class="button button--flex button--small portfolio__button">
@@ -556,10 +563,12 @@
                     <div class="portfolio__content grid swiper-slide">
                         <img src="public/img/portfolio2.jpg" alt="portfolio1" class="portfolio__img">
 
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Movie billboard App</h3>
-                            <p class="portfolio__description">CRUD website made with Laravel, authentication with Laravel Breeze and database connection. Adaptable to all devices.</p>
-                            <a href="https://cinelaravel.herokuapp.com/" target="_blank" class="button button--flex button--small portfolio__button">
+                        <div class="portfolio__data" id="project2">
+                            <h3 class="portfolio__title">Movie Billboard Web App</h3>
+                            <p class="portfolio__description">CRUD website built with Laravel, authentication with
+                                Laravel Breeze and database connection. Adaptable to all devices.</p>
+                            <a href="https://cinelaravel.herokuapp.com/" target="_blank"
+                                class="button button--flex button--small portfolio__button">
                                 Demo
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
@@ -569,10 +578,13 @@
                     <div class="portfolio__content grid swiper-slide">
                         <img src="public/img/portfolio3.jpg" alt="portfolio1" class="portfolio__img">
 
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Radio online</h3>
-                            <p class="portfolio__description">Radio web app made with Angular, linked to Firebase so you can tune in to your favorite radio stations. Adaptable to all devices.</p>
-                            <a href="https://subeme-la-radio.web.app/" class="button button--flex button--small portfolio__button">
+                        <div class="portfolio__data" id="project3">
+                            <h3 class="portfolio__title">Radio Online Web App</h3>
+                            <p class="portfolio__description">Radio web app built with Angular, linked to Firebase so
+                                you
+                                can tune in to your favorite radio stations. Adaptable to all devices.</p>
+                            <a href="https://subeme-la-radio.web.app/"
+                                class="button button--flex button--small portfolio__button">
                                 Demo
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
@@ -706,23 +718,26 @@
     <script src="librerias/jquery/jquery.min.js"></script>
 
     <!--==================== JQUERY UI ====================-->
-    <script src="librerias/jquery-ui/jquery-ui.min.js"></script>
+    <!-- <script src="librerias/jquery-ui/jquery-ui.min.js"></script> -->
 
     <!--==================== JQUERY VALIDATION ====================-->
-    <script src="librerias/jquery-validation/dist/jquery.validate.min.js"></script>
-    <script src="librerias/jquery-validation/dist/localization/messages_es.min.js"></script>
+    <!-- <script src="librerias/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="librerias/jquery-validation/dist/localization/messages_es.min.js"></script> -->
 
     <!--==================== FONT AWESOME ====================-->
     <script src="librerias/fontawesome/js/all.min.js"></script>
 
     <!--==================== SWEETALERT 2 ========================= -->
-    <script src="librerias/sweetalert/sweetalert2.all.min.js"></script>
+    <!-- <script src="librerias/sweetalert/sweetalert2.all.min.js"></script> -->
 
     <!--==================== SWIPER JS ====================-->
     <script src="public/js/swiper-bundle.min.js"></script>
 
     <!--==================== AJAX ====================-->
-    <script src="librerias/crearConexion.js"></script>
+    <!-- <script src="librerias/crearConexion.js"></script> -->
+
+    <!--================== TRANSLATION WITH i18n ====================-->
+    <script src="public/js/translation.js"></script>
 
     <!--==================== MAIN JS ====================-->
     <script src="public/js/main.js"></script>

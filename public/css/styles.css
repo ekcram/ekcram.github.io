@@ -89,6 +89,11 @@ body.dark-theme {
 .nav__btns {
   display: flex;
   align-items: center;
+  margin-top: -1.8rem;
+}
+
+.lang__content{
+  color:var(--first-color);
 }
 
 .change-theme {
@@ -242,6 +247,29 @@ img {
 
 .nav__link:hover {
   color: var(--first-color-lighter);
+}
+
+.lang__content {
+  background-color: var(--input-color);
+  border-radius: 0.5rem;
+  border-color: var(--first-color);
+  padding: 0.25rem;
+  margin-left: 1rem;
+}
+
+.lang__content:hover{
+  border-color: var(--first-color-lighter);
+}
+
+.lang__option {
+  width: 20%;
+  background-color: var(--input-color);
+  color: var(--text-color);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  border: none;
+  outline: none;
+  padding: 0.25rem;
 }
 
 .nav__icon {
@@ -785,6 +813,9 @@ img {
   outline: none;
 }
 
+
+
+
 /*==================== CONTACT ME ====================*/
 .contact__container {
   row-gap: 3rem;
@@ -959,6 +990,12 @@ img {
     column-gap: 0;
   }
 
+  .nav__btns {
+    display: flex;
+    align-items: center;
+    margin-top: 0rem;
+  }
+
   .home__content {
     grid-template-columns: 0.25fr 3fr;
   }
@@ -1008,6 +1045,12 @@ img {
     justify-self: center;
   }
 
+  .nav__btns {
+    display: flex;
+    align-items: center;
+    margin-top: 0rem;
+  }
+
   .about__container,
   .portfolio__content,
   .contact__container,
@@ -1038,6 +1081,12 @@ img {
 
     body {
       margin: 0;
+    }
+
+    .nav__btns {
+      display: flex;
+      align-items: center;
+      margin-top: -1.8rem;
     }
 
     .section {
@@ -1196,6 +1245,12 @@ img {
     padding: 0;
   }
 
+  .nav__btns {
+      display: flex;
+      align-items: center;
+      margin-top: -1.8rem;
+    }
+
   .home__blob {
     width: 320px;
   }
@@ -1228,9 +1283,9 @@ img {
     bottom: -4.5rem;
   }
 
-  .contact__form {
+  /* .contact__form {
     width: 460px;
-  }
+  } */
 
   .contact__inputs {
     grid-template-columns: repeat(2, 1fr);

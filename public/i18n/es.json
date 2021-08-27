@@ -1,0 +1,101 @@
+{
+    "header": {
+        "navHome": " Inicio",
+        "navAbout": " Sobre mí",
+        "navSkills": " Skills",
+        "navServices": " Servicios",
+        "navPortfolio": " Portafolio",
+        "navContact": " Contacto"
+    },
+    "homeSec": {
+        "homeTitle": "Hola, soy Marco.",
+        "homeSubtitle": "Desarrollador web",
+        "homeDescription": "Experiencia de nivel junior en diseño web y conocimientos de desarrollo, siempre con ganas de aprender cosas nuevas.",
+        "contactButton": " Contáctame",
+        "scrollButton": " Deslizar"
+    },
+    "aboutMeSec": {
+        "secTitle": "Sobre Mí",
+        "secSubtitle": "Mi introducción",
+        "description": "¡Hola! Soy Marco y este es mi sitio web personal. Actualmente estoy estudiando para convertirme en Desarrollador Web. Desde pequeño mi pasión ha sido la informática, pero también los idiomas. Por eso decidí estudiar ambas cosas. Sin embargo, el desarrollo y la programación web es lo principal en lo que quiero disfrutar trabajando y, por supuesto, convertirme en un buen profesional.",
+        "downloadButton": "Descargar CV"
+    },
+    "skillsSec": {
+        "secTitle": "Skills",
+        "secSubtitle": "Tecnologías que utilizo",
+        "skills1": "Desarrollador frontend",
+        "skills2": "Desarrollador backend",
+        "skills3": "Otros"
+    },
+    "qualfctionSec": {
+        "secTitle": "Formación",
+        "secSubtitle": "Mi recorrido profesional",
+        "education": "Educación",
+        "qualification1": {
+            "qualTitle": "Grado en Estudios de Asia Oriental",
+            "qualSubtitle": "Sevilla - Universidad"
+        },
+        "qualification2": {
+            "qualTitle": "Grado Superior en Desarrollo de Aplicaciones Web",
+            "qualSubtitle": "Córdoba - Instituto"
+        },
+        "qualification3": {
+            "qualTitle": "Bootcamp de Angular por Sngular",
+            "qualSubtitle": "Córdoba - Online"
+        },
+        "languages": " Idiomas",
+        "langs": {
+            "language1": "Español",
+            "langSubtitle1": "Nativo",
+            "language2": "Inglés",
+            "language3": "Chino",
+            "language4": "Japonés"
+        }
+    },
+    "servicesSec": {
+        "secTitle": "Servicios",
+        "secSubtitle": "Qué ofrezco",
+        "frontend": "Desarrollador <br/> Frontend",
+        "backend": "Desarrollador <br/> Backend",
+        "viewmore": "Ver más",
+        "frontTitleModal": "Desarrollador <br/> Frontend",
+        "backTitleModal": "Desarrollador <br/> Backend",
+        "modalSeo": {
+            "li1": "Realizo auditorías para tu sitio web.",
+            "li2": "Analizo a tus competidores.",
+            "li3": "Optimizo el rendimiento de su página web.",
+            "li4": "Posiciono tu sitio web."
+        },
+        "modalFrontend": {
+            "li1": "Desarrollo la interfaz de usuario.",
+            "li2": "Desarrollo componentes interactivos."
+        },
+        "modalBackend": {
+            "li1": "Desarrollo los servicios backend.",
+            "li2": "Realizo operaciones y conexiones con base de datos."
+        }
+    },
+    "portfolioSec": {
+        "secTitle": "Portafolio",
+        "secSubtitle": "Proyectos más recientes",
+        "project1": {
+            "title": "App Web Juego de Dados",
+            "description": "Sitio web construido con PHP con sesiones y conexión a base de datos. Adaptable a todos los dispositivos."
+        },
+        "project2": {
+            "title": "App Web Cartelera de cine Online",
+            "description": "Sitio web CRUD construido con Laravel, autenticación con Laravel Breeze y conexión a la base de datos. Adaptable a todos los dispositivos."
+        },
+        "project3": {
+            "title": "App Web Radio Online",
+            "description": "Aplicación web creada con Angular para que puedas sintonizar sus estaciones de radio favoritas. Vinculada a Firebase. Adaptable a todos los dispositivos."
+        }
+    },
+    "contactSec": {
+        "secTitle": "Contáctame",
+        "secSubtitle": "Ponte en contacto",
+        "locationh3": "Localización",
+        "locationSpan": "Córdoba - España",
+        "footerSubtitle": "Desarrollador web"
+    }
+}

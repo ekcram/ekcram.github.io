@@ -1,0 +1,101 @@
+{
+    "header": {
+        "navHome": " Home",
+        "navAbout": " About me",
+        "navSkills": " Skills",
+        "navServices": " Services",
+        "navPortfolio": " Portfolio",
+        "navContact": " Contact"
+    },
+    "homeSec": {
+        "homeTitle": "Hi, I'm Marco.",
+        "homeSubtitle": "Web developer",
+        "homeDescription": "Junior level experience in web design and development knowledge, hard working and always wanting lo learn new things.",
+        "contactButton": " Contact Me",
+        "scrollButton": " Scroll down"
+    },
+    "aboutMeSec": {
+        "secTitle": "About Me",
+        "secSubtitle": "My introduction",
+        "description": "Hello there! I'm Marco and this is my personal website. Currently I'm studying to become a Web Developer. Since I was little, my passion has been computers, but also languages. That's why I decided to study both things. However, web development and programming is the main thing I want to enjoy working at and, of course, become on a good professional.",
+        "downloadButton": "Download CV"
+    },
+    "skillsSec": {
+        "secTitle": "Skills",
+        "secSubtitle": "Technologies I use",
+        "skills1": "Frontend developer",
+        "skills2": "Backend developer",
+        "skills3": "Others"
+    },
+    "qualfctionSec": {
+        "secTitle": "Qualification",
+        "secSubtitle": "My personal journey",
+        "education": "Education",
+        "qualification1": {
+            "qualTitle": "Degree in East Asian Studies",
+            "qualSubtitle": "Seville - University"
+        },
+        "qualification2": {
+            "qualTitle": "Higher Degree in Web Application Development",
+            "qualSubtitle": "Córdoba - Institute"
+        },
+        "qualification3": {
+            "qualTitle": "Bootcamp Angular by Sngular",
+            "qualSubtitle": "Córdoba - Online"
+        },
+        "languages": " Languages",
+        "langs": {
+            "language1": "Spanish",
+            "langSubtitle1": "Native",
+            "language2": "English",
+            "language3": "Chinese",
+            "language4": "Japanese"
+        }
+    },
+    "servicesSec": {
+        "secTitle": "Services",
+        "secSubtitle": "What I offer",
+        "frontend": "Frontend <br/> Developer ",
+        "backend": "Backend <br/> Developer",
+        "viewmore": "View more",
+        "frontTitleModal": "Frontend <br/> Developer",
+        "backTitleModal": "Backend <br/> Developer",
+        "modalSeo": {
+            "li1": "I make audits for your website.",
+            "li2": "I analyze your competitors.",
+            "li3": "I optimize the performance of your website.",
+            "li4": "I position your website."
+        },
+        "modalFrontend": {
+            "li1": "I develop the user interface.",
+            "li2": "I design interactive components."
+        },
+        "modalBackend": {
+            "li1": "I develop the backend services.",
+            "li2": "I perform operations and connections with the database."
+        }
+    },
+    "portfolioSec": {
+        "secTitle": "Portfolio",
+        "secSubtitle": "Most recent projects",
+        "project1": {
+            "title": "Dice Game Web App",
+            "description": "Website built with PHP with sessions and database connection. Adaptable to all devices."
+        },
+        "project2": {
+            "title": "Movie Billboard Web App",
+            "description": "CRUD website built with Laravel, authentication with Laravel Breeze and database connection. Adaptable to all devices."
+        },
+        "project3": {
+            "title": "Radio Online Web App",
+            "description": "Web application created with Angular so you can tune in to your favorite radio stations. Linked to Firebase. Adaptable to all devices."
+        }
+    },
+    "contactSec": {
+        "secTitle": "Contact me",
+        "secSubtitle": "Get in touch",
+        "locationh3": "Location",
+        "locationSpan": "Cordoba - Spain",
+        "footerSubtitle": "Web developer"
+    }
+}
