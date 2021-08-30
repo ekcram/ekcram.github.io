@@ -2,7 +2,7 @@
 
 let langList = ['en', 'es', 'zh'];
 // let url = `/public/i18n/${langList[0]}.json`; //local
-let url = `./js/i18n/${langList[0]}.json`; //server
+let url = `public/js/i18n/${langList[0]}.json`; //server
 
 // we fetch it once and use that one response/result in multiple places via the promise chain
 let storedData = fetch(url)
