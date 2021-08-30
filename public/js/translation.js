@@ -1,6 +1,6 @@
 /*==================== TRANSLATION WITH i18n ===================*/
 
-let langList = ['EN', 'ES', 'ZH'];
+let langList = ['en', 'es', 'zh'];
 // let url = `/public/i18n/${langList[0]}.json`; //local
 let url = `./i18n/${langList[0]}.json`; //server
 
